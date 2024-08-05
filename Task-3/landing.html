@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Shopify Landing Page </title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="logo"></div>
+                <ul class="navlist" id="navlist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="hero">
+                    <img src="Product.jpg" alt="" height="300px">
+                    <div class="content">
+                        <h3>Organic</h3>
+                        <h1>Boston Round</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt maiores perspiciatis aliquam eos deleniti aliquid error in similique repellat?</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        const hamburger=document.getElementById("hamburger");
+        const navlist=document.getElementById("navlist");
+
+        hamburger.addEventListener("click",()=>{
+            navlist.classList.toggle("navlist-active")
+        })
+    </script>
+</body>
+</html>
